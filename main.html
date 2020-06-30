@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script type="text/javascript" src="js/drawables.js"></script>
+    <script type="text/javascript" src="js/guns.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/gamestatus.js"></script>
+</head>
+<body >
+    <canvas id="canvas" width="815" height="480" onclick="goInput();"
+    onmousemove="mouseMove(event.clientX, event.clientY);">
+   </canvas>
+   <div id="start-menu">
+       <div id="player-name-input">
+           <form id="data">
+               <p><input id="name" placeholder="Your name" name="user"></p>
+           </form>
+           <p><button type="button" form="data" onclick="startGame()">Confirm</button></p>
+       </div>
+   </div>
+   <div id="endgame-menu"> 
+       <h1>Таблица игроков</h1>
+       <table id="players">
+
+       </table>
+   </div>
+   <div id="buttons">
+       <button type="button" onclick="restart()">Restart</button>
+       <!-- <button type="button" onclick="endGame()">Show score list</button> -->
+   </div>
+   <form>
+   </form>
+</body>
+</html>
